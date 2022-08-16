@@ -132,6 +132,7 @@ async def on_ready():
         await (await client.fetch_user(adminID)).send('Error de unpickling')
         print('Error de unpickling')
         participants = {}
+        duplicar('databackup','oldData')
     await comprovar_participants()
     await historial_missatges()
     ready = True
